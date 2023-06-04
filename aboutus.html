@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+  
+
+  
+        <div class="infocontainer">
+            <dev class="info">
+              <h1>About Me</h1>
+              <p>Python Django developer-fresher looking for new opportunities.</p>
+              <h3>My Skills</h3>
+              <div class="skillcontainer">
+                <div class="skillitem">PYTHON: <div class="skill eighty"></div></div>
+                <div class="skillitem">DJANGO: <div class="skill ninety"></div></div>
+                <div class="skillitem">HTML: <div class="skill seventy"></div></div>
+                <div class="skillitem">CSS: <div class="skill fifty"></div></div>
+                <div class="skillitem">JavaScript: <div class="skill fifty"></div></div>
+                 
+                    
+              </div>
+
+            </dev>
+            <div class="devpic"><img src="{% static 'img/sindhupng.png' %}" alt="S P Singh">>
+
+            </div>
+
+        </div>
+         
+        {% endblock  %}

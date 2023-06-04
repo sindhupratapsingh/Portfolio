@@ -1,0 +1,52 @@
+ {% extends 'base.html' %}
+ {% load static %}
+ 
+ {% block content %}
+  
+
+  
+        <div class="contactform">
+          <h2>Contact me for work/general Enquiries.</h2>
+            <form method="post" action="contact" id="contact" is_valid="is_valid" class="bv-form">
+              {% csrf_token %}
+                 
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input name="name" type="text" class="form-control"  id="name" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="clientemail" class="form-label">Email address</label>
+                  <input type="email" name="email"   class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email & Phone with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="clientphone" class="form-label">phone No.</label>
+                  <input type="phone" name="phone"  class="form-control" id="clientphone">
+                </div>
+                <div class="mb-3">
+                  <label for="clientenquiry" class="form-label">Enquiry</label>
+                  <input type="text" name="Enquiry"  class="form-control" id="clienttext" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3" id="form-check">
+                  <input type="checkbox" class="form-check-input" id="Isclient">
+                  <label name="checkbox"  class="form-check-label" for="Isclient">I want you to work on a project with me</label>
+                </div> 
+               
+
+
+                <div class="buttons">
+
+                </div>
+                <button type="submit" class="btn btn-sm">Submit</button>
+              </form>
+        </div>
+
+
+
+
+
+
+
+        {% endblock content %}

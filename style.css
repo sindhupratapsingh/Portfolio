@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Source+Code+Pro:wght@200&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Source+Code+Pro:wght@200&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Source+Code+Pro:wght@200&display=swap');
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: blueviolet;
+    position: absolute;
+   
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+   
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace; */
+}
+.sidebar nav{
+    padding: 30px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+    cursor: pointer;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    background-color: darkslateblue;
+    height: 100vh;
+    width: 100vw;
+    
+    /* font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace; */
+}
+
+.container{
+    display: flex;
+    
+}
+
+.infocontainer{
+    background-color: rebeccapurple;
+    height: 50vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hello{
+    font-size: 65px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace;  
+
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+.about{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Source Code Pro', monospace;
+
+}
+.buttons{
+    margin-top: 34px;
+   
+    
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 35px;
+    color: azure;
+    background-color: rgb(37, 89, 202);
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+.btn-sm{
+    font-size: 12px;
+}
+.btn:hover{
+    background-color: cornsilk;
+    color: darkolivegreen;
+}
+
+
+.devpic img{
+    width: 350px;
+    height: 50vh;
+    
+}
+
+.moreabout{
+    margin-top: 20px;
+
+}
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+    margin: 0 88px;
+
+}
+.contactform h2{
+
+    font-family: 'Source Code Pro', monospace; 
+    text-align: center; 
+    padding: 12px 0; 
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 10px;
+    color: rgb(21, 23, 26);
+    margin: 0 5px;
+}
+#form-check{
+    flex-direction: row;
+
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+
+}
+
+.projectcontainer{
+   display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+.card{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    
+}
+img{
+    height: 150px;
+    width: 300px;
+}
+h3{
+    padding: 0px;
+    margin: 10px;
+}
+h1{
+    margin-top: 20px;
+}
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+}
+.skill{
+    width: 265px;
+    height: 6px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    
+}
+.hundred{
+    background-color: aqua;
+
+}
+.ninety{
+    background-color: aqua;
+    
+
+}
+.eighty{
+    background-color: aqua;
+
+}
+.seventy{
+    background-color: aqua;
+
+}
+.fifty{
+    background-color: aqua;
+
+}
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 70px;
+}
+
+@media(max-width: 1615px) {
+    *{    
+    /* background-color:red; */
+    }
+.devpic{
+    display: none;
+} 
+
+.infocontainer{
+    margin:40px;
+    margin-top:80px;
+  
+}
+.skill{
+
+}
+.skillcontainer{
+    
+}
+.contactform{
+    padding-top: 20px;
+}
+}
